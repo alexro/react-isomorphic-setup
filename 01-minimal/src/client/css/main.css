@@ -1,0 +1,10 @@
+nav {
+  padding: 10px;
+  background-color: steelblue;
+}
+nav > a {
+  color: white;
+}
+main {
+  padding: 15px;
+}
