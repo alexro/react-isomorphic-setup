@@ -17,6 +17,13 @@ var app = express();
 
 app.use(express.static(path.join(__dirname, '../client')));
 
+// remove trailing slashes so /url01 and /url01/ will hit the same route
+app.use(function(req, res, next) {
+  if(req.url.length > 1 && req.url.substr(-1) == '/')
+    req.url.slice(0, -1);
+  next();
+});
+
 app.get('*', function (req, res) {
   console.log(req.url);
   Router.run(routes, req.url, function (Handler) {
