@@ -20,7 +20,9 @@ var Component = React.createClass({
 				<p>
 					<input />
 				</p>
-				<Link to="aboutInner">Link to AboutInner</Link>
+				<p>
+					<Link to="aboutTab1">Tab 1</Link> | <Link to="aboutTab2">Tab 2</Link>
+				</p>
 				<RouteHandler />
 			</div>
 		);

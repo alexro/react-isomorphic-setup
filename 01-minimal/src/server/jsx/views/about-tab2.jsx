@@ -6,7 +6,7 @@ var Component = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<h1>Inside about</h1>
+				<h2>Tab 2</h2>
 			</div>
 		);
 	}
